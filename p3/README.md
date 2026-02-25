@@ -33,7 +33,7 @@ For instructions on submission,
 refer back to the [P0 README](../p0/README.md).
 for example, you may submit with the command:
 ```sh
-python3 -m autograder.run.submit pacai/student/learning.py pacai/student/learning-questions.py
+python3 -m autograder.run.submit pacai/student/learning.py pacai/student/learning_questions.py
 ```
 
 ### Evaluation
@@ -181,7 +181,7 @@ Once you are on that, you agent is then forced to take the "EXIT" action and ent
 which then causes it to exit/end the game/round/episode.
 This behavior matches more closely with what you may see in your textbook,
 since there are theoretical reasons that it makes more sense than just exiting directly.
-If you run with `--debug`, you can see your agent enter the per-terminal state,
+If you run with `--debug`, you can see your agent enter the pre-terminal state,
 get a reward, and then be forced to take the "EXIT" action.
 
 If your games ever appear to be "hanging" (especially if you have no UI or debug output),
