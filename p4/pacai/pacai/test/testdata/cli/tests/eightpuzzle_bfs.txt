@@ -1,0 +1,9 @@
+{
+    "cli": "pacai.eightpuzzle.bin",
+    "arguments": [
+        "--solver", "search-solver-bfs"
+    ],
+    "error": true
+}
+---
+builtins.NotImplementedError: breadth_first_search

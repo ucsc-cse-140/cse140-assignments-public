@@ -1,0 +1,5 @@
+{
+    "method": "GET",
+    "url": "simple?b=1&b=2",
+    "response_body": "specialcase_listparams_url"
+}

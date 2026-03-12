@@ -1,0 +1,5 @@
+{
+    "method": "POST",
+    "url": "simple",
+    "response_body": "simple_post"
+}

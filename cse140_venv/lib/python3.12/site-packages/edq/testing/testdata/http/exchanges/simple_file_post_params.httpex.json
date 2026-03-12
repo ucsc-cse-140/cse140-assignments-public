@@ -1,0 +1,14 @@
+{
+    "method": "POST",
+    "url": "simple",
+    "parameters": {
+        "a": "1",
+        "b": "2"
+    },
+    "files": [
+        {
+            "path": "../files/a.txt"
+        }
+    ],
+    "response_body": "simple_file_post_params"
+}

@@ -1,0 +1,6 @@
+{
+    "cli": "edq.cli.version",
+    "arguments": [],
+}
+---
+<VERSION>

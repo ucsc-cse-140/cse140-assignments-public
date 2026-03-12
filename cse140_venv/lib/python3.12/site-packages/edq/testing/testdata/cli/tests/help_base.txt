@@ -1,0 +1,9 @@
+{
+    "cli": "edq.cli.version",
+    "arguments": [
+        '--help'
+    ],
+    "error": true
+}
+---
+builtins.SystemExit: 0

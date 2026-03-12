@@ -1,0 +1,11 @@
+{
+    "method": "GET",
+    "url": "simple",
+    "files": [
+        {
+            "path": "../files/a.txt",
+            "name": "foo.txt"
+        }
+    ],
+    "response_body": "simple_file_name"
+}

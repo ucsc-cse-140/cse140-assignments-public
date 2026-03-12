@@ -1,0 +1,13 @@
+{
+    "cli": "edq.cli.config.list",
+    "arguments": [
+        "--config-file", "__DATA_DIR__(configs/simple-1/edq-config.json)",
+        "--config-global", "__DATA_DIR__(configs/empty/edq-config.json)",
+        "--config", "pass=password1234",
+        "--show-origin",
+    ],
+}
+---
+Key	Value	Origin
+pass	password1234	<cli argument>
+user	user@test.edulinq.org	__ABS_DATA_DIR__(configs/simple-1/edq-config.json)

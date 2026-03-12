@@ -1,0 +1,14 @@
+{
+    "cli": "edq.cli.config.list",
+    "arguments": [
+        "--ignore-config-option", "pass",
+        "--ignore-config-option", "api-key",
+        "--config-global", "__DATA_DIR__(configs/empty/edq-config.json)",
+        "--config-file", "__DATA_DIR__(configs/simple-1/edq-config.json)",
+        "--config-file", "__DATA_DIR__(configs/simple-2/edq-config.json)",
+        "--config", "pass=password1234",
+    ],
+}
+---
+Key	Value
+user	user@test.edulinq.org

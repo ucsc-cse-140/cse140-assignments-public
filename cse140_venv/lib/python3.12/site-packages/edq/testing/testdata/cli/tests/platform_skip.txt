@@ -1,0 +1,5 @@
+{
+    "cli": "package.that.does.not.exist.and.should.never.be.called",
+    "platform_skip": ".*"
+}
+---

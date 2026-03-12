@@ -1,0 +1,7 @@
+{
+    "method": "GET",
+    "url": "simple/jsonresponse/dict",
+    "response_body": {
+        "a": 1
+    }
+}

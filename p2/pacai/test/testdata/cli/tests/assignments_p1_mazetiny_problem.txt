@@ -1,0 +1,17 @@
+{
+    "cli": "pacai.pacman.bin",
+    "arguments": [
+        "--seed", "4",
+        "--ui", "null",
+        "--board", "maze-tiny",
+        "--pacman", "agent-search-problem"
+    ]
+}
+---
+<LOG_PREFIX> -- Path found with 192 steps and a total cost of 192.00 in <DURATION_SECONDS>. 192 search nodes expanded.
+<LOG_PREFIX> -- Average Score: 318.0
+<LOG_PREFIX> -- Scores:        318
+<LOG_PREFIX> -- Win Rate:      1 / 1 (1.00)
+<LOG_PREFIX> -- Record:        Win
+<LOG_PREFIX> -- Average Turns: 192.0
+<LOG_PREFIX> -- Turn Counts:   192

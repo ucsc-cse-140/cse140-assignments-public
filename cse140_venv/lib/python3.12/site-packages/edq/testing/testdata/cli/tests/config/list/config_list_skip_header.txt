@@ -1,0 +1,10 @@
+{
+    "cli": "edq.cli.config.list",
+    "arguments": [
+        "--config-global", "__DATA_DIR__(configs/empty/edq-config.json)",
+        "--config", "user=user@test.edulinq.org",
+        "--skip-header",
+    ],
+}
+---
+user	user@test.edulinq.org

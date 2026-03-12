@@ -1,0 +1,9 @@
+{
+    "method": "GET",
+    "url": "simple/jsonresponse/list",
+    "response_body": [
+        {
+            "a": 1
+        }
+    ]
+}

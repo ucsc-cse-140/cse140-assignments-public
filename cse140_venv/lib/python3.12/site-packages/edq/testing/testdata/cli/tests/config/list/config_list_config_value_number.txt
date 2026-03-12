@@ -1,0 +1,10 @@
+{
+    "cli": "edq.cli.config.list",
+    "arguments": [
+        "--config-global", "__DATA_DIR__(configs/empty/edq-config.json)",
+        "--config-file", "__DATA_DIR__(configs/value-number/edq-config.json)",
+    ],
+}
+---
+Key	Value
+timeout	60

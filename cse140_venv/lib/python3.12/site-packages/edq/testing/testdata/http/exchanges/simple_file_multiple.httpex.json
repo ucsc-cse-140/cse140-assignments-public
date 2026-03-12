@@ -1,0 +1,13 @@
+{
+    "method": "GET",
+    "url": "simple",
+    "files": [
+        {
+            "path": "../files/a.txt"
+        },
+        {
+            "path": "../files/tiny.png"
+        }
+    ],
+    "response_body": "simple_file_multiple"
+}

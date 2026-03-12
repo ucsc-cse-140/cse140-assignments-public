@@ -19,9 +19,16 @@ def shopSmart(orderList, fruitShops):
     fruitShops: List of FruitShops
     """
 
-    # *** Your Code Here ***
+    min = float('inf')
+    bestShop = None
 
-    return None
+    for store in fruitShops:
+        cost = store.getPriceOfOrder(orderList)
+        if cost < min:
+            min = cost
+            bestShop = store
+
+    return bestShop
 
 def main():
     dir1 = {
@@ -41,9 +48,8 @@ def main():
 
     orders = [('apples', 1.0), ('oranges', 3.0)]
     print("For orders: %s the best shop is %s." % (orders, shopSmart(orders, shops).getName()))
-
+    
     orders = [('apples', 3.0)]
     print("For orders: %s the best shop is %s." % (orders, shopSmart(orders, shops).getName()))
-
 if __name__ == '__main__':
     main()

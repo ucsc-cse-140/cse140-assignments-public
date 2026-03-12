@@ -1,0 +1,8 @@
+{
+    "method": "GET",
+    "url": "simple",
+    "headers": {
+        "a": "1"
+    },
+    "response_body": "simple_headers"
+}

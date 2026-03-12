@@ -1,0 +1,17 @@
+{
+    "cli": "pacai.pacman.bin",
+    "arguments": [
+        "--seed", "4",
+        "--board", "maze-test",
+        "--pacman", "agent-scripted",
+        "--ui", "null",
+        "--max-turns", "10",
+    ]
+}
+---
+<LOG_PREFIX> -- Average Score: -10.0
+<LOG_PREFIX> -- Scores:        -10
+<LOG_PREFIX> -- Win Rate:      0 / 1 (0.00)
+<LOG_PREFIX> -- Record:        Loss
+<LOG_PREFIX> -- Average Turns: 10.0
+<LOG_PREFIX> -- Turn Counts:   10

@@ -1,0 +1,5 @@
+{
+    "method": "GET",
+    "url": "simple?c=3&d=4",
+    "response_body": "simple_urlparams"
+}

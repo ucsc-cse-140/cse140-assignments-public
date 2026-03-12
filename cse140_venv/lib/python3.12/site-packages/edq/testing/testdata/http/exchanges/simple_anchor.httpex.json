@@ -1,0 +1,5 @@
+{
+    "method": "GET",
+    "url": "simple#a",
+    "response_body": "simple_anchor"
+}

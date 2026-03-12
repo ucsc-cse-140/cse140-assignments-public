@@ -1,0 +1,10 @@
+{
+    "method": "GET",
+    "url": "simple",
+    "files": [
+        {
+            "path": "../files/tiny.png"
+        }
+    ],
+    "response_body": "simple_file_binary"
+}
