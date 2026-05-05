@@ -16,7 +16,7 @@ Your team will try to eat the food on the far side of the map, while defending t
 
 The project will consist of three phases:
 
-1. The first phase will consist of forming a team (3 to 4 people) and an initial test of the tournament.
+1. The first phase will consist of forming a team (3 people) and an initial test of the tournament.
    Students must submit a functioning team of agents.
    For this phase we only evaluate that your team runs and do not care about how well it performs.
    (So for this phase, you can just submit a team full of
