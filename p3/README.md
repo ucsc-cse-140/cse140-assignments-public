@@ -22,8 +22,8 @@ some of which you will need to read and understand in order to complete the assi
 ### Submission
 
 You will fill in portions of
-[`pacai/student/learning.py`](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/learning.py)
-and [`pacai/student/learning_questions.py`](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/learning_questions.py)
+[`pacai/student/learning.py`](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/student/learning.py)
+and [`pacai/student/learning_questions.py`](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/student/learning_questions.py)
 during this assignment.
 You should **only** submit these two files.
 Unless told otherwise, you may create whatever supporting functions, methods, and members you need,
@@ -72,7 +72,7 @@ One more piece of advice: if you don't know what a variable does or what kind of
 All the code for this (and later projects) is available in this repository:
 [https://github.com/edulinq/pacai](https://github.com/edulinq/pacai).
 The only files you should edit are located in the
-[pacai.student](https://github.com/edulinq/pacai/tree/v2.0.1/pacai/student) package.
+[pacai.student](https://github.com/edulinq/pacai/tree/v2.1.0/pacai/student) package.
 You should **not** use any third-party libraries,
 but the [Python Standard Library](https://docs.python.org/3/library/) is fair-game.
 If a bug is found in the code (non-student) code,
@@ -82,14 +82,14 @@ Any commands provided throughout these instructions are to be executed from the 
 (the one with the `README.md` and `LICENSE.md` files).
 
  - Core Engine Elements
-   - [pacai.core.action.Action](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/action.html#Action)
-   - [pacai.core.board.Board](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/board.html#Board)
-   - [pacai.core.board.Position](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/board.html#Position)
-   - [pacai.core.mdp.MarkovDecisionProcess](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/mdp.html#MarkovDecisionProcess)
-   - [pacai.gridworld.mdp.GridWorldMDP](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/gridworld/mdp.html#GridWorldMDP)
+   - [pacai.core.action.Action](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/action.html#Action)
+   - [pacai.core.board.Board](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/board.html#Board)
+   - [pacai.core.board.Position](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/board.html#Position)
+   - [pacai.core.mdp.MarkovDecisionProcess](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/mdp.html#MarkovDecisionProcess)
+   - [pacai.gridworld.mdp.GridWorldMDP](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/gridworld/mdp.html#GridWorldMDP)
  - Agents
-   - [pacai.core.agent Agent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/agent.html#Agent)
-   - [pacai.agents.mdp.MDPAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/mdp.html#MDPAgent)
+   - [pacai.core.agent Agent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/agent.html#Agent)
+   - [pacai.agents.mdp.MDPAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/mdp.html#MDPAgent)
 
 ## GridWorld & MDPs
 
@@ -194,23 +194,23 @@ You can use `--max-turns 1000` to ensure that games like this get stopped.
 ### Question 1 (6 points)
 
 For our first agent, we will implement a [value iteration](https://en.wikipedia.org/wiki/Markov_decision_process#Value_iteration) agent
-in [pacai.student.learning.ValueIterationAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#ValueIterationAgent).
+in [pacai.student.learning.ValueIterationAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#ValueIterationAgent).
 This agent is not only aware that the environment/world is controlled by an MDP,
 but has the exact parameters of that MDP
-(available as [pacai.student.learning.ValueIterationAgent.mdp](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#ValueIterationAgent.mdp)).
+(available as [pacai.student.learning.ValueIterationAgent.mdp](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#ValueIterationAgent.mdp)).
 Since this agent has a copy of the MDP that the game/environment is using,
 it can just simulate games using that same MDP to come up with a good policy to follow.
 
-This agent is a subclass of [pacai.agents.mdp.MDPAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/mdp.html#MDPAgent),
+This agent is a subclass of [pacai.agents.mdp.MDPAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/mdp.html#MDPAgent),
 and both of these classes have provided most of the infrastructure you need already.
 A lot of the existing code is just to properly display values in the Q-Display.
 Make sure to carefully take a look at all the provided code.
 Note that if you see a method without a comment,
 that is because it is inheriting that comment from its parent (which will show up in documentation, but not the code).
 You will have to implement the following methods (but you may create whatever else in this file you need):
- - [`do_value_iteration()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#ValueIterationAgent.do_value_iteration) -- Perform value iteration.
- - [`get_qvalue()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#ValueIterationAgent.get_qvalue) -- Fetch a Q-value for an MDP state and action.
- - [`get_policy_action()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#ValueIterationAgent.get_policy_action) -- Fetch the policy action for an MDP state.
+ - [`do_value_iteration()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#ValueIterationAgent.do_value_iteration) -- Perform value iteration.
+ - [`get_qvalue()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#ValueIterationAgent.get_qvalue) -- Fetch a Q-value for an MDP state and action.
+ - [`get_policy_action()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#ValueIterationAgent.get_policy_action) -- Fetch the policy action for an MDP state.
 
 Make sure to use the "batch" version of value iteration where each vector $V_k$ is computed from a fixed vector $V_{k-1}$ (like in lecture),
 not the "online" version where one single weight vector is updated in place.
@@ -280,7 +280,7 @@ python3 -m pacai.gridworld --agent agent-value-iteration --board gridworld-bridg
 
 Change only **ONE** of the discount and noise parameters (and nothing else) so that the optimal policy causes your agent to attempt to cross the bridge.
 (They may not make it, but they at least need to try.)
-Put your answer in the [pacai.student.learning_questions.question_2](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_2) function.
+Put your answer in the [pacai.student.learning_questions.question_2](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning_questions.html#question_2) function.
 
 ### Question 3 (5 points)
 
@@ -311,11 +311,11 @@ The default options corresponds to:
 python3 -m pacai.gridworld --agent agent-value-iteration --board gridworld-discount --qdisplay --noise 0.2 --living-reward 0.0 --agent-arg 0::discount_rate=0.9
 ```
 
- - [question_3a](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_3a) -- Prefer the close exit (+1), risking the cliff (orange direction)).
- - [question_3b](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_3b) -- Prefer the close exit (+1), but avoiding the cliff (green direction).
- - [question_3c](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_3c) -- Prefer the distant exit (+10), risking the cliff (orange direction).
- - [question_3d](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_3d) -- Prefer the distant exit (+10), avoiding the cliff (green direction).
- - [question_3e](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_3e) -- Avoid both exits (also avoiding the cliff).
+ - [question_3a](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning_questions.html#question_3a) -- Prefer the close exit (+1), risking the cliff (orange direction)).
+ - [question_3b](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning_questions.html#question_3b) -- Prefer the close exit (+1), but avoiding the cliff (green direction).
+ - [question_3c](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning_questions.html#question_3c) -- Prefer the distant exit (+10), risking the cliff (orange direction).
+ - [question_3d](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning_questions.html#question_3d) -- Prefer the distant exit (+10), avoiding the cliff (green direction).
+ - [question_3e](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning_questions.html#question_3e) -- Avoid both exits (also avoiding the cliff).
 
 To check your choices using the GUI,
 make sure you pay attention to the "Values & Policy" screen and not just what your agent does.
@@ -350,23 +350,23 @@ Note that pacai will probably be using different variables names than the ones u
 
 | Classical Q-Learning Terminology | General Name         | pacai Variable                                     |
 |----------------------------------|----------------------|----------------------------------------------------|
-| α / Alpha                        | Learning Rate        | [pacai.agents.mdp.MDPAgent.learning_rate](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/mdp.html#MDPAgent.learning_rate) |
-| γ / Gamma                        | Discount Rate/Factor | [pacai.agents.mdp.MDPAgent.discount_rate](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/mdp.html#MDPAgent.discount_rate) |
-| ε / Epsilon                      | Exploration Rate     | [pacai.agents.mdp.MDPAgent.exploration_rate](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/mdp.html#MDPAgent.exploration_rate) |
+| α / Alpha                        | Learning Rate        | [pacai.agents.mdp.MDPAgent.learning_rate](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/mdp.html#MDPAgent.learning_rate) |
+| γ / Gamma                        | Discount Rate/Factor | [pacai.agents.mdp.MDPAgent.discount_rate](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/mdp.html#MDPAgent.discount_rate) |
+| ε / Epsilon                      | Exploration Rate     | [pacai.agents.mdp.MDPAgent.exploration_rate](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/mdp.html#MDPAgent.exploration_rate) |
 
 ### Question 4 (5 points)
 
-You will now implement the core code for a Q-learning agent in [pacai.student.learning.QLearningAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningAgent).
+You will now implement the core code for a Q-learning agent in [pacai.student.learning.QLearningAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningAgent).
 This agent starts off knowing very little about its environment,
-but learns via its [pacai.student.learning.QLearningAgent.update_qvalue()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningAgent.get_qvalue) method.
+but learns via its [pacai.student.learning.QLearningAgent.update_qvalue()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningAgent.get_qvalue) method.
 
-Like your value iteration agent, this agent is also a subclass of [pacai.agents.mdp.MDPAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/mdp.html#MDPAgent).
+Like your value iteration agent, this agent is also a subclass of [pacai.agents.mdp.MDPAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/mdp.html#MDPAgent).
 Make sure you thoroughly read and understand the existing code before you start.
 You will have to implement the following methods (but you may create whatever else in this file you need):
- - [`update_qvalue()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningAgent.update_qvalue) -- Take in information from the previous and current states to update the agent's view of the world.
- - [`get_action()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningAgent.get_action) -- Decide on the next action for this agent.
- - [`get_mdp_state_value()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningAgent.get_mdp_state_value) -- Fetch the value for the given MDP state.
- - [`get_policy_action()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningAgent.get_policy_action) -- Fetch the policy action for an MDP state.
+ - [`update_qvalue()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningAgent.update_qvalue) -- Take in information from the previous and current states to update the agent's view of the world.
+ - [`get_action()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningAgent.get_action) -- Decide on the next action for this agent.
+ - [`get_mdp_state_value()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningAgent.get_mdp_state_value) -- Fetch the value for the given MDP state.
+ - [`get_policy_action()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningAgent.get_policy_action) -- Fetch the policy action for an MDP state.
 
 Your agent will learn over several different games (set via the `--num-training` flag).
 The first time your agent runs, it will have no prior information.
@@ -374,17 +374,17 @@ However, each time after that your agent will be passed the Q-values from its pr
 (We will refer to each game run during training as a ["training epoch"](https://deepai.org/machine-learning-glossary-and-terms/epoch),
 which is a more general way to refer to training a model.)
 This information will be loaded via
-[`pack_training_info()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningAgent.pack_training_info)
-and [`unpack_training_info()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningAgent.unpack_training_info),
+[`pack_training_info()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningAgent.pack_training_info)
+and [`unpack_training_info()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningAgent.unpack_training_info),
 which are already implemented for you.
 So for each epoch, you will have a fresh agent that gets the Q-values from the previous epoch.
 Once training is over, you agent will always get the Q-values from your last training epoch.
-You can tell if you agent is currently training via the [pacai.core.agent.Agent.training](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/agent.html#Agent.training) variable.
+You can tell if you agent is currently training via the [pacai.core.agent.Agent.training](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/agent.html#Agent.training) variable.
 During learning/training, a Q-learning agent may explore,
 otherwise the Q-learning agent is supposed to strictly follow the policy.
 
 To help you debug your code,
-we have provided the [pacai.student.learning.QLearningUserInputAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningUserInputAgent).
+we have provided the [pacai.student.learning.QLearningUserInputAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningUserInputAgent).
 This agent is a subclass of your Q-learning agent,
 but takes input from you instead of using it's policy.
 This way, you can see how different actions will affect your learned values.
@@ -438,7 +438,7 @@ python3 -m pacai.gridworld --agent agent-qlearning --board gridworld-bridge --qd
 
 Is there a set of values for the learning and exploration rates that make it highly likely (greater than 99%)
 for your agent to develop a policy that crosses the bridge to reach the 10 point exit?
-Put your answer in the [pacai.student.learning_questions.question_5](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_5) function.
+Put your answer in the [pacai.student.learning_questions.question_5](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning_questions.html#question_5) function.
 If there is no such pair of values, return a single `None`.
 
 ## State Abstraction
@@ -466,9 +466,9 @@ In GridWorld, the MDP state can be represented just with a position,
 i.e., we know everything we need to know about our MDP state just by knowing where we are.
 Pac-Man, however, is much more complex and needs to know about more things like the ghost positions, food/pellets, capsules, etc.
 Therefore, while GridWorld will use the very fast
-[pacai.core.mdp.MDPStatePosition](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/mdp.html#MDPStatePosition) class,
+[pacai.core.mdp.MDPStatePosition](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/mdp.html#MDPStatePosition) class,
 Pac-Man must use the more complex (and slower)
-[pacai.core.mdp.MDPStateBoard](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/mdp.html#MDPStateBoard) class.
+[pacai.core.mdp.MDPStateBoard](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/mdp.html#MDPStateBoard) class.
 These state classes are chosen automatically, and don't require any action from you.
 The speed difference should be fairly noticeable.
 
@@ -518,16 +518,16 @@ which will take in a state $ s $ and action $ a $ pair,
 and output a vector of features:
 $ f(s, a) = f_1(s, a), f_2(s, a), ... f_n(s, a) $.
 pacai provides some infrastructure for features and feature functions in
-[pacai.core.features](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/features.html).
-In pacai, features are typically held in a [pacai.core.features.FeatureDict](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/features.html#FeatureDict),
+[pacai.core.features](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/features.html).
+In pacai, features are typically held in a [pacai.core.features.FeatureDict](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/features.html#FeatureDict),
 which is a dictionary instead of a vector.
 This is just for convenience and clarity,
 since it is usually easier to debug your features when you can see the key associated with each one.
 Missing features are assumed to be 0.
 You can see a trivial feature function in
-[pacai.core.features.score_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/features.html#score_feature_extractor),
+[pacai.core.features.score_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/features.html#score_feature_extractor),
 and a more complex one (specifically made for Pac-Man) in
-[pacai.pacman.features.simple_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/features.html#simple_feature_extractor).
+[pacai.pacman.features.simple_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/features.html#simple_feature_extractor).
 
 Once features are computed,
 approximate Q-learning computes a Q-value by taking the [dot product](https://en.wikipedia.org/wiki/Dot_product)
@@ -555,25 +555,25 @@ Note that this should look a lot like normal Q-learning.
 ### Question 7 (3 points)
 
 Implement your own approximate Q-learning agent in
-[pacai.student.learning.ApproximateQLearningAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#ApproximateQLearningAgent).
-This agent is a subclass of your [pacai.student.learning.QLearningAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#QLearningAgent),
+[pacai.student.learning.ApproximateQLearningAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#ApproximateQLearningAgent).
+This agent is a subclass of your [pacai.student.learning.QLearningAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#QLearningAgent),
 but should not use the `qvalues` member.
 Instead, you will learn values for `weights` during training,
 and use those (with features) to compute Q-values.
 You will have to implement the following methods (but you may create whatever else in this file you need):
- - [`get_qvalue()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#ApproximateQLearningAgent.get_qvalue) -- Fetch a Q-value for an MDP state and action.
- - [`update_qvalue()`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#ApproximateQLearningAgent.update_qvalue) -- Take in information from the previous and current states to update the agent's view of the world.
+ - [`get_qvalue()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#ApproximateQLearningAgent.get_qvalue) -- Fetch a Q-value for an MDP state and action.
+ - [`update_qvalue()`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#ApproximateQLearningAgent.update_qvalue) -- Take in information from the previous and current states to update the agent's view of the world.
 
 A feature function will be available to your agent in
-[pacai.student.learning.ApproximateQLearningAgent.feature_extractor_func](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning.html#ApproximateQLearningAgent.feature_extractor_func).
-This function defaults to [pacai.core.features.score_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/features.html#score_feature_extractor).
+[pacai.student.learning.ApproximateQLearningAgent.feature_extractor_func](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/learning.html#ApproximateQLearningAgent.feature_extractor_func).
+This function defaults to [pacai.core.features.score_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/features.html#score_feature_extractor).
 This function is general and will work for every type of game,
 but (as we saw with P2's reflect agent) will not work well with Pac-Man:
 ```sh
 python3 -m pacai.pacman --pacman agent-qlearning-approx --board grid-small --num-training 300 --num-games 20
 ```
 
-Instead we can use [pacai.core.features.board_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/features.html#board_feature_extractor),
+Instead we can use [pacai.core.features.board_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/features.html#board_feature_extractor),
 which creates a unique feature for each state/action pair and gives it a value of 1.0.
 This means that our agent is learning a weight for each unique state/action pair,
 which should be exactly the same as normal Q-learning:
@@ -584,7 +584,7 @@ python3 -m pacai.pacman --pacman agent-qlearning-approx --board grid-small --num
 Of course we don't just want to match our old agent,
 we want to beat it!
 So, let's try a real feature extractor,
-[pacai.pacman.features.simple_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/features.html#simple_feature_extractor),
+[pacai.pacman.features.simple_feature_extractor()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/features.html#simple_feature_extractor),
 which was made for Pac-Man:
 ```sh
 python3 -m pacai.pacman --pacman agent-qlearning-approx --board grid-small --num-training 300 --num-games 20 --agent-arg 0::feature_extractor_func=feature-extractor-pacman-simple

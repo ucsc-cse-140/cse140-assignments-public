@@ -16,11 +16,11 @@ Your team will try to eat the food on the far side of the map, while defending t
 
 The project will consist of three phases:
 
-1. The first phase will consist of forming a team (3 people) and an initial test of the tournament.
+1. The first phase will consist of forming a team (3 to 4 people) and an initial test of the tournament.
    Students must submit a functioning team of agents.
    For this phase we only evaluate that your team runs and do not care about how well it performs.
    (So for this phase, you can just submit a team full of
-   [DummyAgents](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/dummy.html#DummyAgent) that just sits there.)
+   [DummyAgents](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/dummy.html#DummyAgent) that just sits there.)
    When you submit your team to the autograder, it will run basic checks on your team.
    Full points from the autograder means that your team passes all the basic checks.
    For this phase, your agent needs to run, but does not need to get full points from the autograder.
@@ -40,7 +40,7 @@ as well as your performance against the baseline agent, the staff agents, and yo
 ### Submission
 
 To enter into the nightly tournaments, your team's agents and all relevant functions must be defined in
-[pacai.student.capture.py](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/capture.py).
+[pacai.student.capture.py](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/student/capture.py).
 
 Every team must have a unique name,
 consisting only of [alphanumeric](https://en.wikipedia.org/wiki/Alphanumericals) characters (any other characters, including whitespace, will be not allowed).
@@ -49,7 +49,7 @@ Instructions for forming groups (using Google Forms) will be posted on Canvas in
 You must submit your team info (team name, motto and list of members).
 
 In every submission to the autograder (linked below),
-you must include a file [capture-team.txt](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/capture-team.txt) in which you will write only your unique team name.
+you must include a file [capture-team.txt](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/student/capture-team.txt) in which you will write only your unique team name.
 **Do not** include other extraneous text in this file.
 Only your team name will be displayed to the rest of the class.
 You will fill in portions of `pacai/student/capture.py` during this assignment.
@@ -213,18 +213,18 @@ For example, you can make red use the provided random team with:
 python3 -m pacai.capture --red capture-team-random
 ```
 
-A [simple, baseline team](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/team.html#create_team_baseline) has been provided for you.
+A [simple, baseline team](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/team.html#create_team_baseline) has been provided for you.
 This team represents the minimum bar that your team should eventually end up beating 99% of the time.
 Watch this team crush the random team:
 ```sh
 python3 -m pacai.capture --red capture-team-random --blue capture-team-baseline --fps 30
 ```
 
-Note how the [baseline team](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/team.html#create_team_baseline) splits its agents into defensive and offensive agents.
+Note how the [baseline team](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/team.html#create_team_baseline) splits its agents into defensive and offensive agents.
 You are not obligated to make your own agent anything similar to the baseline agent,
 but you will probably see that thinking about both offense and defense will generally serve you well.
 
-Your student team (created by [pacai.student.capture.create_team()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/capture.html#create_team)) has the alias `capture-team-student`.
+Your student team (created by [pacai.student.capture.create_team()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/capture.html#create_team)) has the alias `capture-team-student`.
 So, you can play the baseline team on your own using:
 ```sh
 python3 -m pacai.capture --red capture-team-student --blue capture-team-baseline --fps 30
@@ -236,7 +236,7 @@ python3 -m pacai.capture --red capture-team-student --blue capture-team-baseline
 ```
 
 When creating your agent,
-make sure to thoroughly examine the Capture game state class ([pacai.capture.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState)).
+make sure to thoroughly examine the Capture game state class ([pacai.capture.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState)).
 There are many function that you may find useful.
 
 <!-- TODO(Batu): Update the tournament link.. -->
@@ -269,11 +269,11 @@ Finally, the added time limit of computation introduces new challenges.
 ### Baseline Team
 
 To kick-start your agent design, we have provided you with a team of baseline agents,
-defined in [pacai.capture.team.create_team_baseline](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/team.html#create_team_baseline).
+defined in [pacai.capture.team.create_team_baseline](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/team.html#create_team_baseline).
 They are both quite bad, but get the job dome.
-The [pacai.capture.agents.OffensiveAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/agents.html#OffensiveAgent)
+The [pacai.capture.agents.OffensiveAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/agents.html#OffensiveAgent)
 moves toward the closest food on the opposing side.
-The [pacai.capture.agents.DefensiveAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/agents.html#DefensiveAgent)
+The [pacai.capture.agents.DefensiveAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/agents.html#DefensiveAgent)
 wanders around on its own side and tries to chase down invaders it happens to see.
 
 ### File naming
@@ -281,8 +281,8 @@ wanders around on its own side and tries to chase down invaders it happens to se
 For the purpose of testing or running games locally,
 you can define a team of agents in any arbitrarily-named python file.
 When submitting to the nightly tournament, however,
-you must define your agents in [pacai.student.capture.py](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/capture.py)
-(and you must also create a [capture-team.txt](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/capture-team.txt) file that specifies your team name).
+you must define your agents in [pacai.student.capture.py](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/student/capture.py)
+(and you must also create a [capture-team.txt](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/student/capture-team.txt) file that specifies your team name).
 
 When the tournament is run, your file will be moved/renamed (so we can run multiple teams at the same time).
 Do not hard-code any file paths that reference your agent classes in your `pacai/student/capture.py`.
@@ -332,16 +332,16 @@ we recommend looking into how the baseline agents do it.
 
 Below are some code points that you may find useful.
 
- - [pacai.capture.gamestate.GameState.get_normalized_score](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState.get_normalized_score)
- - [pacai.capture.gamestate.GameState.is_ghost](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState.is_ghost)
- - [pacai.capture.gamestate.GameState.is_pacman](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState.is_pacman)
- - [pacai.capture.gamestate.GameState.is_scared](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState.is_scared)
- - [pacai.capture.gamestate.GameState.food_count](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState.food_count)
- - [pacai.capture.gamestate.GameState.get_food](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState.get_food)
- - [pacai.capture.gamestate.GameState.get_team_positions](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState.get_team_positions)
- - [pacai.capture.gamestate.GameState.get_opponent_positions](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState.get_opponent_positions)
- - [pacai.capture.gamestate.GameState.get_invader_positions](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState.get_invader_positions)
- - [pacai.search.distance.DistancePreComputer](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/distance.html#DistancePreComputer)
+ - [pacai.capture.gamestate.GameState.get_normalized_score](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState.get_normalized_score)
+ - [pacai.capture.gamestate.GameState.is_ghost](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState.is_ghost)
+ - [pacai.capture.gamestate.GameState.is_pacman](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState.is_pacman)
+ - [pacai.capture.gamestate.GameState.is_scared](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState.is_scared)
+ - [pacai.capture.gamestate.GameState.food_count](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState.food_count)
+ - [pacai.capture.gamestate.GameState.get_food](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState.get_food)
+ - [pacai.capture.gamestate.GameState.get_team_positions](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState.get_team_positions)
+ - [pacai.capture.gamestate.GameState.get_opponent_positions](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState.get_opponent_positions)
+ - [pacai.capture.gamestate.GameState.get_invader_positions](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/capture/gamestate.html#GameState.get_invader_positions)
+ - [pacai.search.distance.DistancePreComputer](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/distance.html#DistancePreComputer)
 
 ### Restrictions
 

@@ -69,7 +69,7 @@ One more piece of advice: if you don't know what a variable does or what kind of
 All the code for this (and later projects) is available in this repository:
 [https://github.com/edulinq/pacai](https://github.com/edulinq/pacai).
 The only files you should edit are located in the
-[pacai.student](https://github.com/edulinq/pacai/tree/v2.0.1/pacai/student) package.
+[pacai.student](https://github.com/edulinq/pacai/tree/v2.1.0/pacai/student) package.
 You should **not** use any third-party libraries,
 but the [Python Standard Library](https://docs.python.org/3/library/) is fair-game.
 If a bug is found in the code (non-student) code,
@@ -82,15 +82,15 @@ There are many files that will be used throughout this quarter-long project.
 Below are a few that you should focus on for this assignment.
 
  - Core Engine Elements
-   - [pacai.core.action.Action](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/action.html#Action)
-   - [pacai.core.board.Board](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/board.html#Board)
-   - [pacai.core.board.Position](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/board.html#Position)
-   - [pacai.core.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/gamestate.html#GameState)
-   - [pacai.pacman.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/gamestate.html#GameState)
+   - [pacai.core.action.Action](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/action.html#Action)
+   - [pacai.core.board.Board](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/board.html#Board)
+   - [pacai.core.board.Position](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/board.html#Position)
+   - [pacai.core.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/gamestate.html#GameState)
+   - [pacai.pacman.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/gamestate.html#GameState)
  - Agents
-   - [pacai.core.agent Agent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/agent.html#Agent)
-   - [pacai.agents.greedy.GreedyAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/greedy.html#GreedyAgent)
-   - [pacai.agents.minimax.MinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/minimax.html#MinimaxLikeAgent)
+   - [pacai.core.agent Agent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/agent.html#Agent)
+   - [pacai.agents.greedy.GreedyAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/greedy.html#GreedyAgent)
+   - [pacai.agents.minimax.MinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/minimax.html#MinimaxLikeAgent)
 
 ## Multi-Agent Pac-Man
 
@@ -104,7 +104,7 @@ Now, it's time for the real fun ... programming!
 
 Let's try to have an agent play the game for us.
 We will start with a reflex agent
-([pacai.student.multiagents.ReflexAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/multiagents.html#ReflexAgent)).
+([pacai.student.multiagents.ReflexAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/multiagents.html#ReflexAgent)).
 "Reflex" agents play the game by not doing any planning,
 but just by evaluating game states for is's possible moves and taking the best one.
 Try letting a reflex agent play Pac-Man with:
@@ -118,17 +118,17 @@ It still does bad even on simpler boards:
 python3 -m pacai.pacman --pacman agent-reflex --board classic-test
 ```
 
-Inspect [its code](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/multiagents.py)
+Inspect [its code](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/student/multiagents.py)
 and make sure you understand what it's doing.
-Note that it is a child of [pacai.agents.greedy.GreedyAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/greedy.html#GreedyAgent),
+Note that it is a child of [pacai.agents.greedy.GreedyAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/greedy.html#GreedyAgent),
 which just tries to take the action the leads to a state with the best evaluation.
 
 ### Question 1 (3 points)
 
 Let's improve the
-[pacai.student.multiagents.ReflexAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/multiagents.html#ReflexAgent) to play respectably.
+[pacai.student.multiagents.ReflexAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/multiagents.html#ReflexAgent) to play respectably.
 You are free to make whatever changes you want,
-but your agent must remain a [pacai.agents.greedy.GreedyAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/greedy.html#GreedyAgent)
+but your agent must remain a [pacai.agents.greedy.GreedyAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/greedy.html#GreedyAgent)
 and a "reflex" agent.
 This means that it is not allowed to do any advanced planning and must just react to
 the current state of the game, its currently available actions, and the states that come up from those actions.
@@ -140,41 +140,41 @@ Note that you do not need all this information to make a good reflex agent, but 
 
  - Remember, you can speed up your game with the `--fps` flag.
    - This can be useful if you agent is just flopping around.
- - The [pacai.agents.greedy.GreedyAgent.evaluate_state()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/agent.html#Agent.evaluate_state) method has two arguments:
+ - The [pacai.agents.greedy.GreedyAgent.evaluate_state()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/agent.html#Agent.evaluate_state) method has two arguments:
    - `state` -- The hypothetical state being evaluated (the agent has not yet moved here, but is considering this state).
    - `action` -- The action the agent took to get to this hypothetical state.
  - If an agent (including Pac-Man) is dead, they have a `None` position.
  - Reflex agents have a bad tendency to repeat positions (move back and forth between the same positions).
-   - You may find [pacai.core.agent.Agent.last_positions](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/agent.html#Agent.last_positions) useful in avoiding this repetition.
- - For this assignment, we know that we are only playing Pac-Man, so you know your game state will be a [pacai.pacman.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/gamestate.html#GameState).
+   - You may find [pacai.core.agent.Agent.last_positions](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/agent.html#Agent.last_positions) useful in avoiding this repetition.
+ - For this assignment, we know that we are only playing Pac-Man, so you know your game state will be a [pacai.pacman.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/gamestate.html#GameState).
    - Make sure to look at all the methods and data available to you
-     (in both the [Pac-Man game state](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/gamestate.html#GameState) state
-     and [its parent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/gamestate.html#GameState).
+     (in both the [Pac-Man game state](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/gamestate.html#GameState) state
+     and [its parent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/gamestate.html#GameState).
  - Pac-Man always has an agent index of 0
-   ([pacai.pacman.gamestate.PACMAN_AGENT_INDEX](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/gamestate.html#PACMAN_AGENT_INDEX)).
+   ([pacai.pacman.gamestate.PACMAN_AGENT_INDEX](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/gamestate.html#PACMAN_AGENT_INDEX)).
    - Agents are almost always referred to by their agent index (which is an int).
    - You can get the agent indexes for all agents (including ghosts) with
-     [pacai.core.gamestate.GameState.get_agent_indexes()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/gamestate.html#GameState.get_agent_indexes).
+     [pacai.core.gamestate.GameState.get_agent_indexes()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/gamestate.html#GameState.get_agent_indexes).
  - You can get the positions of all agents with
-   [pacai.core.gamestate.GameState.get_agent_positions()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/gamestate.html#GameState.get_agent_positions).
+   [pacai.core.gamestate.GameState.get_agent_positions()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/gamestate.html#GameState.get_agent_positions).
    - If you just want one agent, you can use
-     [pacai.core.gamestate.GameState.get_agent_position()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/gamestate.html#GameState.get_agent_position).
+     [pacai.core.gamestate.GameState.get_agent_position()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/gamestate.html#GameState.get_agent_position).
      - If you don't provide an agent index, it will use the current agent.
        - But be careful! You will often be evaluating hypothetical future states where it is other agent's turn to move.
  - You can see how long each ghost will be scared for using
-   [pacai.pacman.gamestate.GameState.scared_timers](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/gamestate.html#GameState.scared_timers).
+   [pacai.pacman.gamestate.GameState.scared_timers](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/gamestate.html#GameState.scared_timers).
    - This is the number of turns each ghost will be scared for (a zero or no entry means the ghost is not scared).
    - If you just want to see if a ghost is scared, you an use
-     [pacai.pacman.gamestate.GameState.is_scared()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/gamestate.html#GameState.is_scared).
+     [pacai.pacman.gamestate.GameState.is_scared()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/gamestate.html#GameState.is_scared).
  - You can get the position of all food on the board with
-   [pacai.pacman.gamestate.GameState.get_food()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/gamestate.html#GameState.get_food).
+   [pacai.pacman.gamestate.GameState.get_food()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/gamestate.html#GameState.get_food).
    - This is just a shortcut for `state.board.get_marker_positions(pacai.pacman.board.MARKER_PELLET)`, which you can also use.
  - When you have numeric values, it is often more useful to use the reciprocal than the original value.
    - This is for several reasons, but one of them is normalizing all values into $[0.0, 1.0]$.
  - You should not modify data in your agent base class or the game's state.
    Although you technically can modify the data (you can pretty much modify anything in Python),
    the game will block modification to the state when running with agent isolation on.
-   - See the [pacai.core.agent.cheating.CheatingAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/cheating.html#CheatingAgent)
+   - See the [pacai.core.agent.cheating.CheatingAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/cheating.html#CheatingAgent)
      for an example of what you should not do.
      - Try running a normal Pac-Man game with this agent, and then use the `--isolation procecss` option to see what happens.
  - Don't forget to use `--seed` while developing if the randomness is making things hard for you.
@@ -278,10 +278,10 @@ However, you don't need to worry about coding for these situations.
 The existing code will take care of all this for you.
 
 Now you will write an adversarial search agent in
-[pacai.student.multiagents.MyMinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/multiagents.html#MyMinimaxLikeAgent).
-This agent is a child of [pacai.agents.minimax.MinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/minimax.html#MinimaxLikeAgent).
+[pacai.student.multiagents.MyMinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/multiagents.html#MyMinimaxLikeAgent).
+This agent is a child of [pacai.agents.minimax.MinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/minimax.html#MinimaxLikeAgent).
 MinimaxLikeAgent provides a base that we can start with to implement a few different adversarial search agents.
-Please make sure to read the [code for MinimaxLikeAgent](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/agents/minimax.py).
+Please make sure to read the [code for MinimaxLikeAgent](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/agents/minimax.py).
 
 ```sh
 python3 -m pacai.pacman --pacman agent-minimax --board classic-minimax
@@ -324,7 +324,7 @@ On the initial state (turn 0), you should see the following minimax scores:
 | 4         | -492                        |
 
 If you don't see these scores, then there is a problem with your code.
-Make sure you review the code for [pacai.agents.minimax.MinimaxLikeAgent](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/agents/minimax.py).
+Make sure you review the code for [pacai.agents.minimax.MinimaxLikeAgent](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/agents/minimax.py).
 Note that the scores get worse as our search depth increases.
 Think about why our minimax score goes down, but our win rate goes up as we increase the search depth.
 
@@ -388,8 +388,8 @@ Less nodes to look at means a faster search.
 One way we can remove (or "prune") nodes from our search tree is [alpha-beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning).
 
 In this question, you will implement alpha-beta pruning into your
-[MyMinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/multiagents.html#MyMinimaxLikeAgent).
-Your agent's parent class ([pacai.agents.minimax.MinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/minimax.html#MinimaxLikeAgent))
+[MyMinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/multiagents.html#MyMinimaxLikeAgent).
+Your agent's parent class ([pacai.agents.minimax.MinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/minimax.html#MinimaxLikeAgent))
 already has the code ready to accept the `alphabeta_prune` parameter,
 you just have to augment your `minimax_step_max()` and `minimax_step_min()`
 to use the `alpha` and `beta` parameters.
@@ -447,12 +447,12 @@ Expectimax (also called expectiminimax) is a variant of minimax where we can asc
 and get an expected score for each min node.
 
 In this question, you will implement expectimax into your
-[MyMinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/multiagents.html#MyMinimaxLikeAgent).
-Your agent's parent class ([pacai.agents.minimax.MinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/minimax.html#MinimaxLikeAgent))
+[MyMinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/multiagents.html#MyMinimaxLikeAgent).
+Your agent's parent class ([pacai.agents.minimax.MinimaxLikeAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/minimax.html#MinimaxLikeAgent))
 already has the code ready to handle expectimax with the `expectimax` parameter.
 You just need to implement the `minimax_step_expected_min()` method.
 To simplify this assignment,
-assume that your opponent will always be [pacai.agents.random.RandomAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/random.html),
+assume that your opponent will always be [pacai.agents.random.RandomAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/random.html),
 which always chooses their legal actions uniformly at random.
 
 ```sh
@@ -499,7 +499,7 @@ You already know from your work on Question 1 that the score alone is not a good
 
 To improve on this,
 in this question you are going to be writing a better evaluation function for our minimax agents.
-Implement your function in [pacai.student.multiagents.better_state_eval()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/multiagents.html#better_state_eval).
+Implement your function in [pacai.student.multiagents.better_state_eval()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/multiagents.html#better_state_eval).
 You can add whatever other classes or function you want to support your state evaluation (but don't change the function's arguments).
 This function is intended to be used with your MyMinimaxLikeAgent,
 so you can even augment your agent to support your state evaluation
@@ -509,7 +509,7 @@ When grading we will use our own version of the code, but it will still have the
 
 You may be able to reuse a lot of code (maybe even all of your code) from Question 1 here.
 The type/signature of the function you are writing is the same (or same enough) as the one used in
-[pacai.core.agent.Agent.evaluate_state()](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/agent.html#Agent.evaluate_state).
+[pacai.core.agent.Agent.evaluate_state()](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/agent.html#Agent.evaluate_state).
 However, there is a key difference in how they are being used here.
 The reflex agent relied solely on evaluating states,
 but your current agent is a planner (it looks ahead and tries to figure out what the future may look like).

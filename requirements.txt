@@ -1,10 +1,9 @@
-autograder-py>=0.6.15
-edq-lms-toolkit>=1.1.9
+autograder-py>=1.0.2,==1.*
+edq-lms-toolkit>=2.0.0,==2.*
 GitPython>=3.1.43
 
 # pacai dependecies.
 # We need to install these directly, since we test assignments without a docker environment
 # (and therefore need to setup our environment manually).
 Pillow>=8.3.2
-edq-utils>=0.0.5
-json5>=0.9.14
+edq-utils>=1.0.2,==1.*

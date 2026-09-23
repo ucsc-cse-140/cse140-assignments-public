@@ -20,7 +20,7 @@ some of which you will need to read and understand in order to complete the assi
 ### Submission
 
 You will fill in portions of
-[`pacai/student/singlesearch.py`](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/singlesearch.py)
+[`pacai/student/singlesearch.py`](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/student/singlesearch.py)
 during this assignment.
 You should **only** submit this file.
 
@@ -67,7 +67,7 @@ One more piece of advice: if you don't know what a variable does or what kind of
 All the code for this (and later projects) is available in this repository:
 [https://github.com/edulinq/pacai](https://github.com/edulinq/pacai).
 The only files you should edit are located in the
-[pacai.student](https://github.com/edulinq/pacai/tree/v2.0.1/pacai/student) package.
+[pacai.student](https://github.com/edulinq/pacai/tree/v2.1.0/pacai/student) package.
 You should **not** use any third-party libraries,
 but the [Python Standard Library](https://docs.python.org/3/library/) is fair-game.
 If a bug is found in the (non-student) code,
@@ -80,24 +80,24 @@ There are many files that will be used throughout this quarter-long project.
 Below are a few that you may want to look over for this assignment.
 
  - Core Engine Elements
-   - [pacai.core.action.Action](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/action.html#Action)
-   - [pacai.core.board.Board](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/board.html#Board)
-   - [pacai.core.board.Position](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/board.html#Position)
-   - [pacai.core.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/gamestate.html#GameState)
-   - [pacai.pacman.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/gamestate.html#GameState)
+   - [pacai.core.action.Action](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/action.html#Action)
+   - [pacai.core.board.Board](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/board.html#Board)
+   - [pacai.core.board.Position](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/board.html#Position)
+   - [pacai.core.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/gamestate.html#GameState)
+   - [pacai.pacman.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/gamestate.html#GameState)
  - Agents
-   - [pacai.core.agent Agent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/agent.html#Agent)
-   - [pacai.agents.searchproblem.SearchProblemAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/searchproblem.html#SearchProblemAgent)
-   - [pacai.agents.searchproblem.GreedySubproblemSearchAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/searchproblem.html#GreedySubproblemSearchAgent)
+   - [pacai.core.agent Agent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/agent.html#Agent)
+   - [pacai.agents.searchproblem.SearchProblemAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/searchproblem.html#SearchProblemAgent)
+   - [pacai.agents.searchproblem.GreedySubproblemSearchAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/searchproblem.html#GreedySubproblemSearchAgent)
  - Search
-   - [pacai.core.search](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html)
-   - [pacai.search.position.PositionSearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/position.html#PositionSearchProblem)
-   - [pacai.search.food.FoodSearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/food.html#FoodSearchProblem)
+   - [pacai.core.search](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html)
+   - [pacai.search.position.PositionSearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/position.html#PositionSearchProblem)
+   - [pacai.search.food.FoodSearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/food.html#FoodSearchProblem)
  - Data Structures
-   - [pacai.util.containers.Stack](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/containers.html#Stack)
-   - [pacai.util.containers.Queue](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/containers.html#Queue)
-   - [pacai.util.containers.PriorityQueue](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/containers.html#PriorityQueue)
-   - [pacai.util.containers.PriorityQueueWithFunction](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/containers.html#PriorityQueueWithFunction)
+   - [pacai.util.containers.Stack](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/containers.html#Stack)
+   - [pacai.util.containers.Queue](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/containers.html#Queue)
+   - [pacai.util.containers.PriorityQueue](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/containers.html#PriorityQueue)
+   - [pacai.util.containers.PriorityQueueWithFunction](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/containers.html#PriorityQueueWithFunction)
 
 ## Welcome to Pac-Man
 
@@ -118,7 +118,7 @@ Lets try and continue this trend of victories throughout the rest of the quarter
 
 Since we won't always have direct control over Pac-Man,
 let's start working with agents that will control them for us.
-One of the simplest agents, [agent-go-west](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/gowest.html#GoWestAgent),
+One of the simplest agents, [agent-go-west](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/gowest.html#GoWestAgent),
 will always goes West (a trivial reflex agent).
 Surprisingly, this agent can occasionally win:
 ```sh
@@ -142,26 +142,26 @@ python3 -m pacai.pacman --help
 _Side Note: pacai Aliases_
 
 Note that we used the string `agent-go-west` to refer to the agent that we wanted to use.
-But, the full name for this agent is actually [`pacai.agents.gowest.GoWestAgent`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/gowest.html#GoWestAgent).
-The pacai project uses [aliases](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/alias.html) (or "shortcuts") for many of its more common names.
+But, the full name for this agent is actually [`pacai.agents.gowest.GoWestAgent`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/gowest.html#GoWestAgent).
+The pacai project uses [aliases](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/alias.html) (or "shortcuts") for many of its more common names.
 You can always use the either the short name or the long name (whichever you like better).
 The assignments in this course will generally use short names so that our commands are more readable.
 If you are every confused about what actual Python object you are referencing,
-see the [pacai.util.alias](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/util/alias.py) file.
+see the [pacai.util.alias](https://github.com/edulinq/pacai/blob/v2.1.0/pacai/util/alias.py) file.
 
 ### My First Searches
 
-The [SearchProblemAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/searchproblem.html#SearchProblemAgent)
+The [SearchProblemAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/searchproblem.html#SearchProblemAgent)
 class plans out a path through Pac-Man's world and then executes that path step-by-step.
 It does this by taking in three different components:
- - [SearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchProblem) -- This specifies the problem that your agent is to solve,
-        and defaults to a [PositionSearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/position.html#PositionSearchProblem) (which just looks for a specific spot on the board).
- - [SearchProblemSolver](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchProblemSolver) -- This is a function that can solve the search problem,
-        and defaults to [random_search](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/random.html#random_search) (which just chooses actions randomly).
+ - [SearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchProblem) -- This specifies the problem that your agent is to solve,
+        and defaults to a [PositionSearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/position.html#PositionSearchProblem) (which just looks for a specific spot on the board).
+ - [SearchProblemSolver](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchProblemSolver) -- This is a function that can solve the search problem,
+        and defaults to [random_search](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/random.html#random_search) (which just chooses actions randomly).
         Only specialized or ridiculous solvers are provided in the default code.
         It will be your task to implement **real** solvers.
- - [SearchHeuristic](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchHeuristic) -- This is a function that helps the solver score states,
-        and defaults to [null_heuristic](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/common.html#null_heuristic) (which just scores everything zero).
+ - [SearchHeuristic](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchHeuristic) -- This is a function that helps the solver score states,
+        and defaults to [null_heuristic](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/common.html#null_heuristic) (which just scores everything zero).
         Not all searches will use heuristics, but the right heuristic can make all the difference.
 
 You can see the default agent/search in action by running:
@@ -206,7 +206,7 @@ Using a random search will always work (given an infinite amount of time),
 but it is pretty inefficient.
 So it is a general search that will always work but it inefficient.
 We can also create searches that are optimal, but super specific.
-For the `maze-tiny` board, we can use the [search-solver-maze-tiny](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/mazetiny.html#maze_tiny_search):
+For the `maze-tiny` board, we can use the [search-solver-maze-tiny](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/mazetiny.html#maze_tiny_search):
 ```
 python3 -m pacai.pacman --board maze-tiny --pacman agent-search-problem --agent-arg 0::solver=search-solver-maze-tiny
 ```
@@ -224,11 +224,11 @@ Before we continue on, let's break down that new argument we used on the command
 The first part `--agent-arg` is of course just the flag that tells the executable how to treat the next part: `0::solver=search-solver-maze-tiny`.
 Here, we have three different components:
  - `0` -- This tells the game which agent to send this argument to. Pac-Man is always agent 0.
- - `solver` -- This is the key that the [SearchProblemSolver](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchProblemSolver) agent uses for solver functions.
+ - `solver` -- This is the key that the [SearchProblemSolver](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchProblemSolver) agent uses for solver functions.
     Every agent is allowed to use whatever keys they want.
- - `search-solver-maze-tiny` -- The value for our [SearchProblemSolver](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchProblemSolver).
-    This string is actually an [alias](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/alias.html)
-    for [`pacai.search.mazetiny.maze_tiny_search`](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/mazetiny.html#maze_tiny_search),
+ - `search-solver-maze-tiny` -- The value for our [SearchProblemSolver](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchProblemSolver).
+    This string is actually an [alias](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/alias.html)
+    for [`pacai.search.mazetiny.maze_tiny_search`](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/mazetiny.html#maze_tiny_search),
     which is the full name for this solver.
 
 ### Making a Real Search
@@ -238,9 +238,9 @@ it's time to write full-fledged generic search functions to help Pac-Man plan ro
 Pseudocode for the search algorithms you'll write can be found in the lecture slides and textbook.
 
 Some things to remember:
- - A [search node](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchNode) should contain not only information about the current state/status of the search,
+ - A [search node](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchNode) should contain not only information about the current state/status of the search,
     but also the information necessary to reconstruct the path (plan) which gets to that state.
- - A [search solution](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchSolution) needs to contain the cost of the solution
+ - A [search solution](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchSolution) needs to contain the cost of the solution
     as well as a list of legal action (no moving through walls!) that gets the agent from the start to the goal.
  - Many search algorithms are very similar.
     Algorithms for DFS, BFS, UCS, and A* differ only in the details of how the fringe is managed.
@@ -250,15 +250,15 @@ Some things to remember:
  - You may find some of the following packages useful.
     These are just simple wrappers around other data structures,
     so feel free to make your own if you don't like the provided ones.
-   - [pacai.util.containers.Stack](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/containers.html#Stack)
-   - [pacai.util.containers.Queue](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/containers.html#Queue)
-   - [pacai.util.containers.PriorityQueue](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/containers.html#PriorityQueue)
-   - [pacai.util.containers.PriorityQueueWithFunction](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/containers.html#PriorityQueueWithFunction)
+   - [pacai.util.containers.Stack](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/containers.html#Stack)
+   - [pacai.util.containers.Queue](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/containers.html#Queue)
+   - [pacai.util.containers.PriorityQueue](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/containers.html#PriorityQueue)
+   - [pacai.util.containers.PriorityQueueWithFunction](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/containers.html#PriorityQueueWithFunction)
 
 ### Question 1 (2 points)
 
 Implement the [depth-first search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search) algorithm in
-[pacai.student.singlesearch.depth_first_search](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#depth_first_search).
+[pacai.student.singlesearch.depth_first_search](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#depth_first_search).
 To make your algorithm _complete_, write the graph search version of DFS, which avoids expanding any already visited states (textbook section 3.5).
 
 Remember that it is always alright to put prints in your code (or use a debugger) to help you understand what it is doing.
@@ -285,13 +285,13 @@ and the order in which they were explored
 Is the exploration order what you would have expected?
 Does Pac-Man actually go to all the explored squares on their way to the goal?
 
-If you use a [pacai.util.containers.Stack](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/util/containers.html#Stack) as your data structure,
+If you use a [pacai.util.containers.Stack](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/util/containers.html#Stack) as your data structure,
 the solution found by your DFS algorithm for `maze-medium` should have a length of 153 steps.
 Note that positions are always given in clockwise order (North, East, South, West),
 and stacks pop the most recent element pushed onto it.
 When your agent reaches a junction, does it check directions in a counter clockwise order?
 If you are getting 244, you probably pushed the successors onto the fringe in the reverse order provided by
-[SearchProblem.get_successor_nodes](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchProblem.get_successor_nodes).
+[SearchProblem.get_successor_nodes](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchProblem.get_successor_nodes).
 
 Is the solution produced by DFS a least cost solution?
 If not, think about what depth-first search could be doing better.
@@ -301,7 +301,7 @@ but even a search that is operating correctly won't produce the best results.
 ### Question 2 (1 point)
 
 Implement the [breadth-first search (BFS)](https://en.wikipedia.org/wiki/Breadth-first_search) algorithm in
-[pacai.student.singlesearch.breadth_first_search](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#breadth_first_search).
+[pacai.student.singlesearch.breadth_first_search](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#breadth_first_search).
 Again, write a graph search algorithm that avoids expanding any already visited states.
 Test your code the same way you did for depth-first search.
 
@@ -371,11 +371,11 @@ and a rational Pac-Man agent should adjust its behavior in response.
 ### Question 3 (2 points)
 
 Implement the [uniform-cost graph search (UCS)](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Practical_optimizations_and_infinite_graphs) algorithm in
-[pacai.student.singlesearch.uniform_cost_search](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#uniform_cost_search).
+[pacai.student.singlesearch.uniform_cost_search](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#uniform_cost_search).
 You should now observe successful behavior in all three of the following layouts.
 Here the agents are all UCS agents that differ only in the cost function they use (the agents and cost functions are written for you).
 
-Here we have the default search agent using [pacai.student.singlesearch.uniform_cost_search](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#uniform_cost_search),
+Here we have the default search agent using [pacai.student.singlesearch.uniform_cost_search](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#uniform_cost_search),
 just like we saw with DFS and BFS:
 ```sh
 python3 -m pacai.pacman --board maze-medium --pacman agent-search-problem --agent-arg 0::solver=search-solver-ucs
@@ -383,7 +383,7 @@ python3 -m pacai.pacman --board maze-medium --pacman agent-search-problem --agen
 
 Note the similarities with BFS.
 
-Now let's try with a different cost function, [pacai.search.common.stay_east_cost_function](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/common.html#stay_east_cost_function):
+Now let's try with a different cost function, [pacai.search.common.stay_east_cost_function](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/common.html#stay_east_cost_function):
 ```sh
 python3 -m pacai.pacman --board maze-medium-dotted --pacman agent-search-problem --agent-arg 0::solver=search-solver-ucs --agent-arg 0::problem_cost=cost-stay-east
 ```
@@ -391,7 +391,7 @@ python3 -m pacai.pacman --board maze-medium-dotted --pacman agent-search-problem
 Note that this cost function gives a better (lower) cost to position that are on the east/right side of the board.
 Therefore, we were able to prioritize a path that happened to eat all the food!
 
-Let's tackle the scary maze with a cost function that prioritizes west/left positions, [pacai.search.common.stay_west_cost_function](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/common.html#stay_west_cost_function):
+Let's tackle the scary maze with a cost function that prioritizes west/left positions, [pacai.search.common.stay_west_cost_function](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/common.html#stay_west_cost_function):
 ```sh
 python3 -m pacai.pacman --board maze-medium-scary --pacman agent-search-problem --agent-arg 0::solver=search-solver-ucs --agent-arg 0::problem_cost=cost-stay-west --fps 100
 ```
@@ -399,8 +399,8 @@ python3 -m pacai.pacman --board maze-medium-scary --pacman agent-search-problem 
 Phew!
 We escaped those persistent ghosts.
 
-Note that you should get low and high path costs when using [pacai.search.common.stay_east_cost_function](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/common.html#stay_east_cost_function)
-and [pacai.search.common.stay_west_cost_function](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/common.html#stay_west_cost_function) respectively.
+Note that you should get low and high path costs when using [pacai.search.common.stay_east_cost_function](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/common.html#stay_east_cost_function)
+and [pacai.search.common.stay_west_cost_function](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/common.html#stay_west_cost_function) respectively.
 This is due to their exponential cost functions.
 
 ## A* search
@@ -415,13 +415,13 @@ with the ability to have a [heuristic function](https://en.wikipedia.org/wiki/He
 ### Question 4 (3 points)
 
 Implement [A\* graph search](https://en.wikipedia.org/wiki/A*_search_algorithm) algorithm in
-[pacai.student.singlesearch.astar_search](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#astar_search).
-A* takes a heuristic function ([pacai.core.search.SearchHeuristic](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchHeuristic)) as an argument.
+[pacai.student.singlesearch.astar_search](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#astar_search).
+A* takes a heuristic function ([pacai.core.search.SearchHeuristic](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchHeuristic)) as an argument.
 These heuristic functions take two arguments: a node in the search problem
-([pacai.core.search.SearchNode](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchNode)) and the search problem itself
-([pacai.core.search.SearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/core/search.html#SearchProblem)).
+([pacai.core.search.SearchNode](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchNode)) and the search problem itself
+([pacai.core.search.SearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/core/search.html#SearchProblem)).
 
-The default heuristic ([pacai.search.common.null heuristic](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/common.html#null_heuristic))
+The default heuristic ([pacai.search.common.null heuristic](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/common.html#null_heuristic))
 is a trivial example of a heuristic that scores everything the same (0.0).
 If you start by testing using the null heuristic (which is default), you should see the same behavior as UCS (since your heuristic is adding nothing):
 ```sh
@@ -435,7 +435,7 @@ python3 -m pacai.pacman --board maze-medium --pacman agent-search-problem --agen
 But if you change your heuristic function,
 then you will start to see differences.
 For example, let's try using [Manhattan distance](https://simple.wikipedia.org/wiki/Manhattan_distance) as a heuristic
-(implemented in [pacai.search.distance.manhattan_heuristic](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/distance.html#manhattan_distance)).
+(implemented in [pacai.search.distance.manhattan_heuristic](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/distance.html#manhattan_distance)).
 
 ```sh
 python3 -m pacai.pacman --board maze-medium --pacman agent-search-problem --agent-arg 0::solver=search-solver-astar --agent-arg 0::heuristic=heuristic-manhattan
@@ -460,10 +460,10 @@ _Hint_: the shortest path through `corners-tiny` takes 28 steps.
 ### Question 5 (2 points)
 
 Implement the search problem
-[pacai.student.singlesearch.CornersSearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#CornersSearchProblem).
-To do this, you will also need to implement your [pacai.student.singlesearch.CornersSearchNode](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#CornersSearchNode))
+[pacai.student.singlesearch.CornersSearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#CornersSearchProblem).
+To do this, you will also need to implement your [pacai.student.singlesearch.CornersSearchNode](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#CornersSearchNode))
 that encodes all the information necessary to detect whether all four corners have been reached.
-Make sure to look at [pacai.search.position.PositionSearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/position.html#PositionSearchProblem) for reference.
+Make sure to look at [pacai.search.position.PositionSearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/position.html#PositionSearchProblem) for reference.
 
 Now, your search agent should solve the following:
 ```sh
@@ -476,21 +476,21 @@ python3 -m pacai.pacman --board corners-medium --pacman agent-search-problem --a
 ```
 
 To receive full credit, you need to define an abstract search node representation that **does not** encode irrelevant information (like the position of ghosts, where extra food is, etc.).
-In particular, do not use game states (like [pacai.pacman.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/pacman/gamestate.html#GameState) as a search node/state.
+In particular, do not use game states (like [pacai.pacman.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/pacman/gamestate.html#GameState) as a search node/state.
 Your code will be very, very slow if you do (and also wrong).
 
 _Hint:_
 The only parts of the game state you need to reference in your search problem implementation is the starting agent (Pac-Man) position, the location of the four corners, and the board.
 
-Our implementation of [pacai.student.singlesearch.breadth_first_search](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#breadth_first_search)
+Our implementation of [pacai.student.singlesearch.breadth_first_search](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#breadth_first_search)
 expands just under 2000 search nodes on `corners-medium`.
 However, heuristics (used with A* search) can reduce the amount of searching required.
 
 ### Question 6 (3 points)
 
-Now that we have the basic [pacai.student.singlesearch.CornersSearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#CornersSearchProblem) working,
+Now that we have the basic [pacai.student.singlesearch.CornersSearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#CornersSearchProblem) working,
 let's try to solve it even faster using A\*!
-Implement the [pacai.student.singlesearch.corners_heuristic](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#corners_heuristic).
+Implement the [pacai.student.singlesearch.corners_heuristic](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#corners_heuristic).
 
 To test your code run:
 ```sh
@@ -518,7 +518,7 @@ must be lower bounds on the actual shortest path cost to the nearest goal.
 
 Now we'll solve a hard search problem: eating all the Pac-Man food in as few steps as possible.
 For this, a new search problem definition which formalizes the food-clearing problem can be found in
-[pacai.search.food.FoodSearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/food.html#FoodSearchProblem).
+[pacai.search.food.FoodSearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/food.html#FoodSearchProblem).
 A solution is defined to be a path that collects all of the food in the Pac-Man world.
 
 For the present project, solutions do not take into account any ghosts or power pellets.
@@ -553,8 +553,8 @@ python3 -m pacai.pacman --board search-tricky --pacman agent-search-problem --ag
 Our reference implementation finds the optimal solution after exploring around 16,000 nodes.
 
 Let's try to improve on this using a new heuristic,
-[pacai.search.food.FoodSearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/search/food.html#FoodSearchProblem)
-in [pacai.student.singlesearch.food_heuristic](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#food_heuristic):
+[pacai.search.food.FoodSearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/search/food.html#FoodSearchProblem)
+in [pacai.student.singlesearch.food_heuristic](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#food_heuristic):
 ```sh
 python3 -m pacai.pacman --board search-tricky --pacman agent-search-problem --agent-arg 0::problem=search-problem-food --agent-arg 0::solver=search-solver-astar --agent-arg 0::heuristic=heuristic-food
 ```
@@ -592,8 +592,8 @@ In this section, you'll write an agent that always eats the closest dot.
 
 ### Question 8 (2 points)
 
-Implement the class [pacai.student.singlesearch.ClosestDotSearchAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#ClosestDotSearchAgent).
-This agent is a subclass of [pacai.agents.searchproblem.GreedySubproblemSearchAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/agents/searchproblem.html#GreedySubproblemSearchAgent).
+Implement the class [pacai.student.singlesearch.ClosestDotSearchAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#ClosestDotSearchAgent).
+This agent is a subclass of [pacai.agents.searchproblem.GreedySubproblemSearchAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/agents/searchproblem.html#GreedySubproblemSearchAgent).
 This greedy agent (named because it uses a [greedy algorithm](https://en.wikipedia.org/wiki/Greedy_algorithm),
 not because of its personality)
 will look for the closest dot/food, move to it, and the look for the next closest foot.
@@ -602,7 +602,7 @@ It will repeat this process until all the food has been eaten.
 There are generally two ways to implement this agent:
  1) A hard/long way where you implement everything from scratch.
  2) A simple way where you have to really understand all the involved code, but only need to write a few lines of code.
-    This method would leverage [pacai.student.singlesearch.AnyMarkerSearchProblem](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#AnyMarkerSearchProblem), which you would also need to implement.
+    This method would leverage [pacai.student.singlesearch.AnyMarkerSearchProblem](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#AnyMarkerSearchProblem), which you would also need to implement.
 
 Of course we would prefer if you implement the simple version,
 but you are free to implement this agent how you see fit.
@@ -622,7 +622,7 @@ In this example, we can plan a path and even finish eating all the dots before a
 
 #### Extra: Approximate Search (2 points extra credit)
 
-Implement an [pacai.student.singlesearch.ApproximateSearchAgent](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/singlesearch.html#ApproximateSearchAgent)
+Implement an [pacai.student.singlesearch.ApproximateSearchAgent](https://edulinq.github.io/pacai/docs/v2.1.0/pacai/student/singlesearch.html#ApproximateSearchAgent)
 that finds a short path through `search-big` in **under** 2 seconds!.
 Official timing is done on the autograder,
 so being very close to two seconds on your local machine may not be good enough.
