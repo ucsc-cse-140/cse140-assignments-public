@@ -87,17 +87,14 @@ Through this report we expect you to demonstrate your ability to constructively 
 ## Points & Teams
 A portion of your grade will be based on performance against the following staff agents:
  - `staff_baseline`
- - `staff_SlugRush`
  - `staff_PhantomSlug`
 
 Points are also awarded as follows:
  - If you lose to the dummy agent, zero points will be awarded for this section.
  - +5 points for beating the `staff_baseline` agent as red.
  - +5 points for beating the `staff_baseline` agent as blue.
- - +2.5 points for beating one additional staff agent as red.
- - +2.5 points for beating one additional staff agent as blue.
- - +2.5 points for beating a second additional staff agent as red.
- - +2.5 points for beating a second additional staff agent as blue.
+ - +5 points for beating the `staff_PhantomSlug` agent as red.
+ - +5 points for beating the `staff_PhantomSlug` agent as blue.
  - +1 Extra Credit point for being the number one team.
 
 For the purposes of the points system, we define "beating" an agent as winning against that agent both when playing as red and as blue.
